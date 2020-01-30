@@ -1,0 +1,16 @@
+
+POST http://localhost:3289/article/articles
+Content-Type: application/json
+
+{
+    "pseudo": "John",
+    "contenu": "Doe",
+    "date": "1987-02-12",
+    "commentaires" : ["5e304b5c5f80902596e08353"]
+}
+
+###
+
+GET http://localhost:3289/
+
+###
