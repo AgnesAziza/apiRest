@@ -9,6 +9,11 @@ const bodyParser= require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
 
+app.use('/film', require('./routes/film.js'))
+app.use('/article', require('./routes/article.js'))
+app.use('/commentaire', require('./routes/commentaire'))
+
+
 mongoose.connect('mongodb://localhost:27017/filmsDb', {
     useNewUrlParser: true, 
     useUnifiedTopology: true
